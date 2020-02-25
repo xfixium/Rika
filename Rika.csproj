@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\xfixi\AppData\Local\Temp\Qijipop\100fa59729\PS4Editor.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA799E60-DC2E-45FC-922A-841963A6E772}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Rika</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Rika</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compression\Enigma.cs" />
+    <Compile Include="Compression\KosinskiPlus.cs" />
+    <Compile Include="Compression\Saxman.cs" />
+    <Compile Include="Controls\CombinationsFormationsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CombinationsFormationsControl.Designer.cs">
+      <DependentUpon>CombinationsFormationsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DialogsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DialogsControl.Designer.cs">
+      <DependentUpon>DialogsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EnemiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EnemiesControl.Designer.cs">
+      <DependentUpon>EnemiesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CharactersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CharactersControl.Designer.cs">
+      <DependentUpon>CharactersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageControl.Designer.cs">
+      <DependentUpon>ImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ItemsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ItemsControl.Designer.cs">
+      <DependentUpon>ItemsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MapsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MapsControl.Designer.cs">
+      <DependentUpon>MapsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GraphicsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GraphicsControl.Designer.cs">
+      <DependentUpon>GraphicsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TechniquesSkillsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TechniquesSkillsControl.Designer.cs">
+      <DependentUpon>TechniquesSkillsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Enumerations.cs" />
+    <Compile Include="Data\EnumMethods.cs" />
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compression\Compression.cs" />
+    <Compile Include="Forms\DataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataForm.Designer.cs">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compression\Kosinski.cs" />
+    <Compile Include="Forms\DataVerifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataVerifyForm.Designer.cs">
+      <DependentUpon>DataVerifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\GameObjects.cs" />
+    <Compile Include="Compression\Nemesis.cs" />
+    <Compile Include="Forms\SpriteRefactorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpriteRefactorForm.Designer.cs">
+      <DependentUpon>SpriteRefactorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Data\RomData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CombinationsFormationsControl.resx">
+      <DependentUpon>CombinationsFormationsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DialogsControl.resx">
+      <DependentUpon>DialogsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EnemiesControl.resx">
+      <DependentUpon>EnemiesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CharactersControl.resx">
+      <DependentUpon>CharactersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImageControl.resx">
+      <DependentUpon>ImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ItemsControl.resx">
+      <DependentUpon>ItemsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MapsControl.resx">
+      <DependentUpon>MapsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GraphicsControl.resx">
+      <DependentUpon>GraphicsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TechniquesSkillsControl.resx">
+      <DependentUpon>TechniquesSkillsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataForm.resx">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataVerifyForm.resx">
+      <DependentUpon>DataVerifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpriteRefactorForm.resx">
+      <DependentUpon>SpriteRefactorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\alys.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chaz.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demi.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gryz.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hahn.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyra.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raja.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rika.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rune.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seth.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wren.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkerboard.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
